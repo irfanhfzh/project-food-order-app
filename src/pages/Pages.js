@@ -1,22 +1,21 @@
-import { useSelector } from "react-redux";
-import { Navigate, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import GoToTop from "../GoToTop";
 import Footer from "../components/layouts/Footer";
 import Header from "../components/layouts/Header";
-import GoToTop from "../GoToTop";
 
 const Pages = () => {
-  const { username } = useSelector((state) => state)
+	// const { username } = useSelector((state) => state)
 
-  if (!username) return <Navigate to="/login" replace />;
+	// if (!username) return <Navigate to="/login" replace />;
 
-  return (
-    <>
-      <Header />
-      <Outlet />
-      <GoToTop />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Outlet />
+			<GoToTop />
+			<Footer />
+		</>
+	);
 };
 
 export default Pages;

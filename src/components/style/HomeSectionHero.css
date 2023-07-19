@@ -1,115 +1,183 @@
 .hero-section .hero-img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .hero-section .title,
 .hero-section .title span {
-  font-family: "Rampart One", cursive;
-  text-transform: uppercase;
-  color: var(--clr-primary);
+	font-family: "Rampart One", cursive;
+	text-transform: uppercase;
+	color: var(--clr-primary);
 }
 
 .hero-section .title {
-  font-size: 5rem;
-  line-height: 3.5rem;
+	font-size: 5rem;
+	line-height: 3.5rem;
 }
 
 .hero-section .title span {
-  font-size: 3rem !important;
-  letter-spacing: 1rem;
+	font-size: 3rem !important;
+	letter-spacing: 1rem;
 }
 
 .hero-section hr {
-  border-top: 5px solid var(--clr-primary);
-  opacity: 1;
+	border-top: 5px solid var(--clr-primary);
+	opacity: 1;
 }
 
 .hero-section .btn-hero {
-  font-weight: 500;
-  padding: 15px 45px;
-  border-radius: 25px;
+	font-weight: 500;
+	padding: 15px 45px;
+	border-radius: 25px;
 }
 
 .hero-section .wrapper-btn-hero_play {
-  font-weight: 500;
-  color: var(--clr-primary);
+	font-weight: 500;
+	color: var(--clr-primary);
 }
 
 .hero-section .btn-hero_play {
-  width: 65px;
-  height: 65px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 3px solid var(--clr-primary);
+	width: 65px;
+	height: 65px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 3px solid var(--clr-primary);
 }
 
 .hero-section .subtitle {
-  font-weight: 700;
-  color: var(--clr-primary);
+	font-weight: 700;
+	color: var(--clr-primary);
 }
 
 .hero-section .fw-semibold {
-  color: var(--clr-primary);
+	color: var(--clr-primary);
+}
+
+.hero-section .btn-wrapper-jelajahi-menu {
+	bottom: 35px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .hero-section .btn-jelajahi-menu {
-  padding: 15px 30px;
-  font-weight: 500;
-  color: var(--clr-primary) !important;
-  background-color: transparent !important;
-  border: 3px solid var(--clr-primary) !important;
-  border-radius: 25px;
+	padding: 15px 30px;
+	font-weight: 500;
+	color: var(--clr-primary) !important;
+	background-color: transparent !important;
+	border: 3px solid var(--clr-primary) !important;
+	border-radius: 25px;
 }
 
 .hero-section .btn-jelajahi-menu:hover {
-  color: var(--clr-white) !important;
-  background-color: var(--clr-primary) !important;
+	color: var(--clr-white) !important;
+	background-color: var(--clr-primary) !important;
+}
+
+.hero-section .intro-owner {
+	margin-top: 3rem;
 }
 
 .hero-section .hero-card-menu {
-  padding: 0 0.65rem;
+	padding: 0 0.65rem;
 }
 
 .hero-section .hero-card-menu .card {
-  width: 150px;
-  margin-bottom: 0.5rem;
-  border-radius: 25px;
-  border: none;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+	width: 150px;
+	margin-bottom: 0.5rem;
+	border-radius: 25px;
+	border: none;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
 .hero-section .hero-card-menu .card .card-img-top {
-  padding: 10px;
+	padding: 10px;
 }
 
 .hero-section .hero-card-menu .card .card-body {
-  padding-top: 0;
-  padding-bottom: 16px;
-  padding-inline: 16px;
+	padding-top: 0;
+	padding-bottom: 16px;
+	padding-inline: 16px;
 }
 
 .hero-section .hero-card-menu .card .card-title {
-  font-weight: 600;
-  font-size: 1.125rem;
+	font-weight: 600;
+	font-size: 1.125rem;
 }
 
 .hero-section .hero-card-menu .card .card-text {
-  font-weight: 500;
-  color: var(--clr-primary);
+	font-weight: 500;
+	color: var(--clr-primary);
 }
 
 .hero-section .menu-hero {
-  cursor: grab;
-  width: 100%;
+	cursor: grab;
+	width: 100%;
+	bottom: 115px;
 }
 
-@media only screen and (max-width: 578px) {
-  .hero-section .title {
-    font-size: 3rem;
-  }
+@media only screen and (max-width: 992px) {
+	.hero-section .title {
+		font-size: 3.5rem;
+	}
+	.hero-section .title span {
+		font-size: 3.5rem !important;
+		letter-spacing: 0.2rem;
+	}
 
-  .hero-section .title span {
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
-  }
+	.hero-section .btn-hero {
+		padding: 10px 20px;
+	}
+	.hero-section .btn-hero_play {
+		width: 50px;
+		height: 50px;
+	}
+
+	.hero-section .img-owner {
+		width: 125px;
+	}
+
+	.hero-section .menu-hero {
+		bottom: 85px;
+	}
+	.hero-section .btn-wrapper-jelajahi-menu {
+		bottom: 20px;
+	}
+	.hero-section .btn-jelajahi-menu {
+		width: max-content;
+		padding: 10px 12px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.hero-section .intro-owner {
+		margin-bottom: 3rem !important;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.hero-section .title {
+		font-size: 2rem;
+		line-height: normal;
+	}
+	.hero-section .title span {
+		font-size: 2rem !important;
+		letter-spacing: 0.2rem;
+	}
+
+	.hero-section .intro-owner {
+		flex-direction: column-reverse;
+		gap: 1.5rem;
+		margin-top: 2rem !important;
+		margin-bottom: 2rem !important;
+	}
+	.hero-section .img-owner {
+		width: 100px;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.hero-section .btn-hero {
+		width: max-content;
+		padding: 10px 15px;
+	}
+	.hero-section .btn-hero_play {
+		width: 40px;
+		height: 36px;
+	}
 }
